@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed font-light">
-              Crafting stories in silk for generations. We bring you hand-selected, authentic Kanjeevarams, Banarasis, and designer sarees woven with passion and pure zari.
+              Crafting stories in silk for generation. We bring you hand-selected, authentic Kanjeevarams, Banarasis, and designer sarees woven with passion and pure zari.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a href="#" className="p-2 rounded-full bg-slate-800 hover:bg-accent hover:text-accent-foreground text-slate-400 transition-all duration-300" title="Instagram">
