@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 30% 98%; /* Ivory background */
+    --foreground: 222 47% 11%; /* Navy text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 222 47% 11%; /* Navy */
+    --primary-foreground: 43 73% 90%; /* Gold cream */
+
+    --secondary: 43 50% 50%; /* Heritage Gold */
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 35 15% 94%;
+    --muted-foreground: 222 15% 45%;
+
+    --accent: 43 60% 53%; /* Accent Gold */
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 43 60% 53%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 35 20% 96%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 222 47% 11%;
+    --sidebar-primary-foreground: 43 73% 90%;
+    --sidebar-accent: 43 60% 90%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 35 15% 88%;
+    --sidebar-ring: 43 60% 53%;
+  }
+
+  .dark {
+    --background: 222 47% 10%; /* Deep Navy */
+    --foreground: 35 30% 98%; /* Ivory */
+
+    --card: 222 47% 7%;
+    --card-foreground: 35 30% 98%;
+
+    --popover: 222 47% 7%;
+    --popover-foreground: 35 30% 98%;
+
+    --primary: 43 60% 53%; /* Gold is primary in Dark Mode */
+    --primary-foreground: 222 47% 10%;
+
+    --secondary: 222 47% 18%;
+    --secondary-foreground: 35 30% 98%;
+
+    --muted: 222 30% 16%;
+    --muted-foreground: 222 15% 65%;
+
+    --accent: 43 60% 53%;
+    --accent-foreground: 222 47% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 30% 16%;
+    --input: 222 30% 16%;
+    --ring: 43 60% 53%;
+
+    --sidebar-background: 222 47% 7%;
+    --sidebar-foreground: 35 30% 98%;
+    --sidebar-border: 222 30% 16%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
